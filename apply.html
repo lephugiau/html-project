@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Apply Form</title>
+</head>
+<body>
+
+<main>
+  <h1>Form Ứng Tuyển</h1>
+
+  <form action="thanks.html" method="get">
+    
+    <fieldset>
+      <legend>Thông tin cá nhân</legend>
+
+      <label for="name">Họ và tên:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Số điện thoại:</label><br>
+      <input type="tel" id="phone" name="phone" required><br><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Thông tin ứng tuyển</legend>
+
+      <label for="position">Vị trí ứng tuyển:</label><br>
+      <select id="position" name="position">
+        <option>Frontend Intern</option>
+        <option>Backend Intern</option>
+        <option>Fullstack Intern</option>
+      </select><br><br>
+
+      <p>Kinh nghiệm:</p>
+      <input type="radio" id="exp1" name="experience">
+      <label for="exp1">Chưa có</label><br>
+
+      <input type="radio" id="exp2" name="experience">
+      <label for="exp2">Dưới 1 năm</label><br>
+
+      <input type="radio" id="exp3" name="experience">
+      <label for="exp3">Trên 1 năm</label><br><br>
+
+      <p>Kỹ năng:</p>
+      <input type="checkbox" id="html" name="skill">
+      <label for="html">HTML</label><br>
+
+      <input type="checkbox" id="css" name="skill">
+      <label for="css">CSS</label><br>
+
+      <input type="checkbox" id="js" name="skill">
+      <label for="js">JavaScript</label><br><br>
+
+      <label for="about">Giới thiệu bản thân:</label><br>
+      <textarea id="about" name="about" rows="4"></textarea>
+    </fieldset>
+
+    <br>
+
+    <input type="checkbox" id="confirm" required>
+    <label for="confirm">Tôi xác nhận thông tin là đúng</label><br><br>
+
+    <button type="submit">Gửi đơn</button>
+
+  </form>
+</main>
+
+</body>
+</html>
